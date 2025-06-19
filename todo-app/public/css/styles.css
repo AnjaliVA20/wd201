@@ -1,4 +1,29 @@
 body{
-    background-color: grey;
-    font-family:'Courier New', Courier, monospace
+    background-color: #FFE8CD;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(50, 52, 52);
+    justify-content: center;
+}
+
+.list tr{
+  
+  padding: 20px;
+  background-color: #FFD6BA ;
+}
+
+td,th{
+   padding: 20px;  
+   border: 1px solid #f4f0f0;
+   text-align: left;
+   border-radius: 10px;
+}
+th{
+   background-color: #FFDCDC;
+}
+
+
+.todo-table{
+    background-color: #FFF2EB;
+    border-radius: 10px;
+   
 }
