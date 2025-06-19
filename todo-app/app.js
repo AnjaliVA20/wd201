@@ -92,4 +92,21 @@ app.delete("/todos/:id", async function (request, response) {
   // response.send(true)
 });
 
+app.get("/seed", async (req, res) => {
+  const { Todo } = require("./models");
+  await Todo.bulkCreate([
+    {
+      title: "Call John",
+      dueDate: "2025-06-18",
+      completed: false
+    },
+    {
+      title: "Pay electricity",
+      dueDate: "2025-06-25",
+      completed: false
+    }
+  ]);
+  res.send("Seeded data in Render DB");
+});
+
 module.exports = app;
