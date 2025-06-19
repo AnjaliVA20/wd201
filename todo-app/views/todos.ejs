@@ -8,13 +8,13 @@
         </tr>
     </thead>
     <tbody>
-        <% for( var i =0; i < allTodos.length;i++){%>
+        <% allTodos.forEach(todo=>{%>
         <tr>
-            <td><%= allTodos[i].id %></td>
-            <td><%= allTodos[i].title %></td>
-            <td><%= allTodos[i].dueDate%></td>
-            <td><%= allTodos[i].completed %></td>
+            <td><%= todo.id %></td>
+            <td><%= todo.title %></td>
+            <td><%= todo.dueDate%></td>
+            <td><%= todo.completed %></td>
         </tr>
-    <% }%>
+    <% })%>
     </tbody>
 </table>
